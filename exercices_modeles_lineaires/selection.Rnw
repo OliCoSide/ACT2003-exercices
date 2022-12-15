@@ -251,7 +251,7 @@ En dimension $p=1$, cela se réduit à
 $$
 \hat\beta_1 = \frac{\sum_{i=1}^8 x_i Y_i}{\sum_{i=1}^8 x_i^2 +\lambda} = \frac{35}{16+\lambda}.
 $$
-Pour $\lambda=4$, on obtient $\hat\beta_1=1.75$. Cette valeur est, comme prévu, plus près de 0 que celle obtenue en a). L'équation du modèle est alors
+Pour $\lambda=4$, on obtient $\hat\beta_1=1.75$. Cette valeur est, comme prévu, plus près de 0 que celle obtenue en a). La droite de régression est alors
 $$
 \hat{Y} = 40+ 1.75x.
 $$
