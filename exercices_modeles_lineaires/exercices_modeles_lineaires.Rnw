@@ -182,13 +182,32 @@
 \begin{document}
 
 % Options pour les graphiques directement appelés en R
+%%% Ce chunk permet de contrôler les options par défaut pour tout les chunks
 <<setup, include=FALSE, cache=FALSE>>=
 library(knitr)
 # set global chunk options
-opts_chunk$set(fig.path='figure/fig-',fig.align='center',fig.show='hold',fig.pos='Hh!', fig.height=5,fig.width=5,out.width='.45\\linewidth')
+opts_chunk$set(fig.path='figure/fig-',
+fig.align='center',
+fig.show='hold',
+fig.pos='Hh!',
+ fig.height=5,
+ fig.width=5,
+ out.width='.45\\linewidth',
+comment = NA, # remove '##'
+tidy = TRUE, # more style in code
+prompt = TRUE) # add '>' before each command
+                        
 par(mar=c(4,4,.1,.1))
 options(width=55)
+
+## theme de couleur pour les chunks. commande R pour voir tout les themes : knitr::knit_theme$get()
+knit_theme$set("print")
+## Pour voir sur internet : https://rclickhandbuch.files.wordpress.com/2014/09/knitrthemesoverview.pdf
+
+## "autumn"
 @
+
+
 
 % \shortcites{R:intro} aucune idée c'est pour quoi
 
@@ -229,6 +248,8 @@ options(width=55)
 
 <<child='binom.Rnw'>>=
 @
+
+
 
 \part{Annexes}
 \appendix

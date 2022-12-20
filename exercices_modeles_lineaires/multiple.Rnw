@@ -1008,8 +1008,11 @@ the p-value is 7.160e-14
   \begin{align*}
     \SSR(x_1,x_4) &= \nombre{24016} \\
     \SSR(x_4) &= \nombre{2668} \\
+  \end{align*}
+ Pour le modèles incluant les quatres variables explicatives, on a:
+  \begin{align*}
     R^2 &= 0,6903 \\
-    s^2 &= 26,41,
+    s^2 &= 26,41 \ ,
   \end{align*}
   où $\SSR(x)$ est la somme des carrés de la régression pour le modèle incluant la variable $x$. Calculer la statistique appropriée pour le test
   \begin{align*}
